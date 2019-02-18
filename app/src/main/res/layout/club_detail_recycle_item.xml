@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="wrap_content"
+                                             android:background="@color/white">
+
+    <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_user_head"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="@dimen/spacing_medium_small"
+            android:layout_marginTop="@dimen/spacing_medium_large"
+            android:src="@mipmap/ic_launcher_round"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_medium_small"
+            android:text="楠楠"
+            android:textColor="@color/txtSuperColor"
+            android:textSize="@dimen/sp_14"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_user_head"
+            app:layout_constraintLeft_toRightOf="@+id/iv_user_head"
+            app:layout_constraintTop_toTopOf="@+id/iv_user_head"/>
+
+    <TextView
+            android:id="@+id/tv_sendDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/spacing_medium_small"
+            android:text="2018-03-08"
+            android:textColor="@color/txtLight"
+            android:textSize="13dp"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_user_head"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/iv_user_head"/>
+
+    <TextView
+            android:id="@+id/tv_evaluate_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_medium_small"
+            android:layout_marginRight="@dimen/spacing_medium_small"
+            android:layout_marginTop="@dimen/spacing_medium_small"
+            android:textSize="16dp"
+            android:textColor="@color/txtSuperColor"
+            android:text="深思耶稣这五个任命，我们便能学到我们在地上使命的详何时、何处、为何以及如何"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_user_head"/>
+
+    <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/image"
+            android:layout_width="120dp"
+            android:layout_height="85dp"
+            android:layout_marginLeft="@dimen/spacing_medium_small"
+            android:layout_marginTop="@dimen/spacing_medium_small"
+            android:background="@mipmap/lanqiu"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_evaluate_content"/>
+
+    <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/spacing_medium_small"
+            android:layout_marginRight="@dimen/spacing_medium_small"
+            android:layout_marginTop="@dimen/spacing_medium_large"
+            android:background="@color/line_color"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image"/>
+</android.support.constraint.ConstraintLayout>

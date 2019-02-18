@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/ry_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"/>
+
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <!--<android.support.v4.widget.NestedScrollView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--app:layout_behavior="@string/appbar_scrolling_view_behavior">-->
+
+        <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@color/white"-->
+                <!--android:orientation="vertical">-->
+
+            <!--<LinearLayout style="@style/myListStyle">-->
+
+                <!--<LinearLayout-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:orientation="vertical">-->
+
+                    <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="练习一:抛接球"-->
+                            <!--android:drawablePadding="@dimen/spacing_medium_small"-->
+                            <!--android:gravity="center_vertical"-->
+                            <!--android:drawableLeft="@mipmap/sensory_blue_hitn"-->
+                            <!--android:layout_marginBottom="15dp"-->
+                            <!--android:textColor="@color/txtSuperColor"-->
+                            <!--android:textSize="@dimen/textSize_medium_small"/>-->
+
+
+                    <!--<ImageView-->
+                            <!--android:id="@+id/imgHead"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:scaleType="fitXY"-->
+                            <!--android:src="@mipmap/sensory_1"-->
+                            <!--app:layout_anchor="@id/app_bar"-->
+                            <!--app:layout_anchorGravity="center|clip_horizontal"/>-->
+
+                    <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="感统的意义感统的意义感统的意义感统的意义感统的意义感统的意义感统的意义感统的意义感统的意义感统的意义感统的意义感统的意义感统的意义感统的意义感统的意义"-->
+                            <!--android:drawablePadding="@dimen/spacing_medium_large"-->
+                            <!--android:gravity="center_vertical"-->
+                            <!--android:layout_marginTop="12dp"-->
+                            <!--android:textColor="@color/txtSecondColor"-->
+                            <!--android:textSize="@dimen/textSize_small"/>-->
+                <!--</LinearLayout>-->
+
+            <!--</LinearLayout>-->
+
+            <!--<View-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="@dimen/spacing_medium_small"-->
+                    <!--android:background="@color/BgColor"/>-->
+
+            <!--<LinearLayout style="@style/myListStyle">-->
+
+                <!--<LinearLayout-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:orientation="vertical">-->
+
+                    <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="练习二:推小车"-->
+                            <!--android:drawablePadding="@dimen/spacing_medium_small"-->
+                            <!--android:gravity="center_vertical"-->
+                            <!--android:drawableLeft="@mipmap/sensory_blue_hitn"-->
+                            <!--android:layout_marginBottom="15dp"-->
+                            <!--android:textColor="@color/txtSuperColor"-->
+                            <!--android:textSize="@dimen/textSize_medium_small"/>-->
+
+                    <!--<ImageView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:scaleType="fitXY"-->
+                            <!--android:src="@mipmap/sensory_2"-->
+                            <!--app:layout_anchor="@id/app_bar"-->
+                            <!--app:layout_anchorGravity="center|clip_horizontal"/>-->
+
+                    <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="感统的意义感统的意义感统的意义感统的意义感统的意义感统的意义感统的意义感统的意义感统的意义感统的意义感统的意义感统的意义感统的意义感统的意义感统的意义"-->
+                            <!--android:drawablePadding="@dimen/spacing_medium_large"-->
+                            <!--android:gravity="center_vertical"-->
+                            <!--android:layout_marginTop="12dp"-->
+                            <!--android:textColor="@color/txtSecondColor"-->
+                            <!--android:textSize="@dimen/textSize_small"/>-->
+                <!--</LinearLayout>-->
+            <!--</LinearLayout>-->
+        <!--</LinearLayout>-->
+    <!--</android.support.v4.widget.NestedScrollView>-->

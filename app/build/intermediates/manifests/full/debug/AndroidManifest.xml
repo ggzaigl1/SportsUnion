@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hjy.sports"
+    android:versionCode="2"
+    android:versionName="2.1" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="23" />
+
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 从SDCard读取数据权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 允许访问摄像头 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- Android 8.0 允许 请求安装未知安装包 -->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <!-- 访问网络 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name="com.fy.baselibrary.application.BaseApplication"
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_logo"
+        android:supportsRtl="true"
+        android:theme="@style/FyAppTheme" >
+        <activity
+            android:name="com.fy.baselibrary.startactivity.StartActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/myTransparent" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hjy.sports.student.login.StartUpActivity"
+            android:label="@string/title_activity_start_up" >
+            <intent-filter>
+                <action android:name="com.hjy.sports.student.login.StartUpActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hjy.sports.student.main.StudentMainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.hjy.sports.main.student.MainActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hjy.sports.student.login.LoginActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.hjy.sports.student.login.LoginActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!--  -->
+        <activity
+            android:name="com.hjy.sports.student.modify.info.ModifyInfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="ratio_float" />
+
+        <!-- 修改电话号码 -->
+        <activity
+            android:name="com.hjy.sports.student.modify.info.CustomerActivity"
+            android:screenOrientation="portrait" />
+        <!-- 修改密码 -->
+        <activity
+            android:name="com.hjy.sports.student.modify.info.ModifyPassActivity"
+            android:screenOrientation="portrait" />
+        <!-- 身高 -->
+        <activity
+            android:name="com.hjy.sports.student.datamodule.stature.StatureActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 形体机体检测 -->
+        <activity
+            android:name="com.hjy.sports.student.datamodule.bodydetection.BodyDetectionActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 体能测试 -->
+        <activity
+            android:name="com.hjy.sports.student.datamodule.physicalfitness.PhysicalFitnessActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 社区图片预览 -->
+        <activity
+            android:name="com.hjy.sports.student.socialmodule.PhotoInfoActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 社区详情界面 -->
+        <activity
+            android:name="com.hjy.sports.student.socialmodule.socaildetail.SocialDetailActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 我的发送过的信息界面 -->
+        <activity
+            android:name="com.hjy.sports.student.socialmodule.mysocial.MySocialActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 发朋友圈消息 -->
+        <activity
+            android:name="com.hjy.sports.student.socialmodule.AddSocialActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 二级评论界面 子评论界面 -->
+        <activity
+            android:name="com.hjy.sports.student.socialmodule.socaildetail.SonRecommendActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 我的发布的消息的详情界面 -->
+        <activity
+            android:name="com.hjy.sports.student.socialmodule.socaildetail.MySocialDetailActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 好友的个人圈 -->
+        <activity
+            android:name="com.hjy.sports.student.socialmodule.friendsocial.FriendSocialActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 数据pk界面 -->
+        <activity
+            android:name="com.hjy.sports.student.homemodule.corporeity.selftest.PKActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- FigureActivity 体形 -->
+        <activity
+            android:name="com.hjy.sports.student.homemodule.quality.figure.FigureActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- StaminaActivity 体能 -->
+        <activity
+            android:name="com.hjy.sports.student.homemodule.quality.stamina.StaminaActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- StandardActivity 达标 -->
+        <activity
+            android:name="com.hjy.sports.student.homemodule.quality.standard.StandardActivity"
+            android:screenOrientation="portrait" />
+        <!-- StoreWebViewActivity 商城 -->
+
+
+        <!-- SensoryActivity 感统 -->
+        <activity
+            android:name="com.hjy.sports.student.homemodule.quality.sensory.SensoryActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- SensoryActivity 感统主要问题更多 -->
+        <activity
+            android:name="com.hjy.sports.student.homemodule.quality.sensory.SensoryMainActivity"
+            android:screenOrientation="portrait" />
+        <!-- SensoryActivity 感统更多 -->
+        <activity
+            android:name="com.hjy.sports.student.homemodule.quality.sensory.SensoryMoreActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- ExerciseActivity 运动处方 -->
+        <activity
+            android:name="com.hjy.sports.student.homemodule.corporeity.exercise.ExerciseActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- ExerciseActivity 运动处方 练习处方 -->
+        <activity
+            android:name="com.hjy.sports.student.homemodule.corporeity.exercise.ExerciseOneActivity"
+            android:screenOrientation="portrait" />
+        <!-- ExerciseActivity 运动处方 练习方法详情 -->
+        <activity
+            android:name="com.hjy.sports.student.homemodule.corporeity.exercise.ExerciseOneParticularsActivity"
+            android:screenOrientation="portrait" />
+        <!-- ExerciseActivity 运动处方2 每周锻炼 -->
+        <activity
+            android:name="com.hjy.sports.student.homemodule.corporeity.exercise.ExerciseTwoActivity"
+            android:screenOrientation="portrait" />
+        <!-- ExerciseActivity 运动处方4 急救小技巧 -->
+        <activity
+            android:name="com.hjy.sports.student.homemodule.corporeity.exercise.ExerciseForeActivity"
+            android:screenOrientation="portrait" />
+        <!-- ExerciseActivity 运动处方4 急救小技巧 详情 -->
+        <activity
+            android:name="com.hjy.sports.student.homemodule.corporeity.exercise.ExerciseForeParticularsActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- DietActivity 饮食处方 -->
+        <activity
+            android:name="com.hjy.sports.student.homemodule.corporeity.diet.DietActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- SelfTestingActivity 自我检测 -->
+        <activity
+            android:name="com.hjy.sports.student.homemodule.corporeity.selftest.SelfTestingActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged" />
+
+        <!-- SelfTestingActivity 自我检测 测试结果 -->
+        <activity
+            android:name="com.hjy.sports.student.homemodule.corporeity.selftest.SelfChallengeActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- SelfTestingActivity 自我检测 测试记录 -->
+        <activity
+            android:name="com.hjy.sports.student.homemodule.corporeity.selftest.SelfChallengeRecordActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- StaminaSignalActivity 体能红绿灯 旧 -->
+        <activity
+            android:name="com.hjy.sports.student.homemodule.corporeity.staminasignal.StaminaSignalActivity"
+            android:screenOrientation="portrait" />
+        <!-- StaminaSignalActivity 体能红绿灯 新 -->
+        <activity
+            android:name="com.hjy.sports.student.homemodule.corporeity.staminasignal.StaminaSignalsActivity"
+            android:screenOrientation="portrait" />
+        <!-- 专家咨询 -->
+        <activity
+            android:name="com.hjy.sports.student.homemodule.expanded.sportsknowledge.SportsKnowledgeActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 健康常识 -->
+        <activity
+            android:name="com.hjy.sports.student.homemodule.expanded.healthknowledge.HealthKnowledgeActivity"
+            android:screenOrientation="portrait" />
+        <!-- 健康常识 详情 -->
+        <activity
+            android:name="com.hjy.sports.student.homemodule.expanded.healthknowledge.HealthKnowledgeParticularsActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 运动拓展 -->
+        <activity
+            android:name="com.hjy.sports.student.homemodule.expanded.development.DevelopmentActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 运动课程 -->
+        <activity
+            android:name="com.hjy.sports.student.homemodule.expanded.ornamental.OrnamentalActivity"
+            android:screenOrientation="portrait" />
+        <!-- 运动课程列表 -->
+        <activity
+            android:name="com.hjy.sports.student.homemodule.expanded.ornamental.OrnamentalListContextActivity"
+            android:screenOrientation="portrait" />
+        <!-- 运动课程 -->
+        <activity
+            android:name="com.hjy.sports.student.homemodule.expanded.ornamental.OrnamentalContextActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 总分 -->
+        <activity
+            android:name="com.hjy.sports.student.homemodule.total.TotalPointsActivity"
+            android:screenOrientation="portrait" />
+        <!-- 提升方案 -->
+        <activity
+            android:name="com.hjy.sports.student.homemodule.quality.standard.LiftingSchemeActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.fy.baselibrary.utils.imgload.MyGlideModule"
+            android:value="GlideModule" />
+
+        <!-- 饮食处方 -->
+        <activity
+            android:name="com.hjy.sports.student.homemodule.corporeity.diet.DietListActivity"
+            android:screenOrientation="portrait" />
+        <!-- 权限管理 -->
+        <activity
+            android:name="com.hjy.sports.util.PermissionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleTranslucentTheme" />
+
+        <!-- 使用 FFmpeg 视频压缩 -->
+        <!-- 参考 https://github.com/hui46226021/ShVideoDemo -->
+        <!-- <activity android:name="com.fy.video.recorder.VideoInputActivity" /> -->
+        <!-- <activity android:name="com.fy.video.scan.VideoPckerActivity" /> -->
+
+
+        <!-- &lt;!&ndash; 播放视频 &ndash;&gt; -->
+        <!-- <activity -->
+        <!-- android:name="com.fy.video.play.VideoPlayActivity" -->
+        <!-- android:configChanges="orientation|keyboardHidden|screenSize" /> -->
+        <!-- 能量需要量List界面 Fragment -->
+        <activity
+            android:name="com.hjy.sports.student.homemodule.corporeity.diet.fragment.dailylist.EnergyDemandListActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 技能拓展 -->
+        <activity
+            android:name="com.hjy.sports.student.homemodule.expanded.development.ClubListActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 俱乐部详情界面 -->
+        <activity
+            android:name="com.hjy.sports.student.homemodule.expanded.development.ClubDetailActivity"
+            android:screenOrientation="portrait" />
+        <!-- WebView Demo -->
+        <activity
+            android:name="com.hjy.sports.student.main.web.WebViewActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 图片选择器 -->
+        <activity
+            android:name="com.fy.img.picker.multiselect.ImgPickerActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.fy.img.picker.ImgPickerActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 图片预览 -->
+        <activity
+            android:name="com.fy.img.picker.preview.PicturePreviewActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.fy.img.picker.preview.PicturePreviewActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hjy.sports.student.homemodule.expanded.development.CourseIntroDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hjy.sports.student.homemodule.expanded.development.ClubIntroductionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hjy.sports.student.main.web.HealthRecordActivity"
+            android:screenOrientation="portrait" />
+
+        <provider
+            android:name="com.fy.img.picker.ImagePickerProvider"
+            android:authorities="com.hjy.sports.provider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name="com.hjy.sports.student.homemodule.expanded.ornamental.OrnamentalMotionActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+
+        <!-- 一下是校长 模块 -->
+        <activity
+            android:name="com.hjy.sports.president.main.PresidentMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="io.agora.core.RoomActivity1"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" /> <!-- ##################################################################################### -->
+        <!-- 消息收发service -->
+        <service
+            android:name="com.tencent.qalsdk.service.QalService"
+            android:exported="false"
+            android:process=":QALSERVICE" /> <!-- 消息收发辅助service -->
+        <service
+            android:name="com.tencent.qalsdk.service.QalAssistService"
+            android:exported="false"
+            android:process=":QALSERVICE" /> <!-- 离线消息广播接收器 -->
+        <receiver
+            android:name="com.tencent.qalsdk.QALBroadcastReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.tencent.qalsdk.broadcast.qal" />
+            </intent-filter>
+        </receiver> <!-- 系统消息广播接收器 -->
+        <receiver
+            android:name="com.tencent.qalsdk.core.NetConnInfoCenter"
+            android:process=":QALSERVICE" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.TIME_SET" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+            </intent-filter>
+        </receiver> <!-- ##################################################################################### -->
+        <activity
+            android:name="com.kmwlyy.imchat.page.ChatActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.kmwlyy.imchat.page.VideoActivity" />
+        <activity android:name="com.kmwlyy.imchat.page.ImageViewActivity" />
+        <activity android:name="com.kmwlyy.imchat.page.ImagePreviewActivity" />
+        <activity android:name="com.kmwlyy.imchat.page.WebViewActivity" />
+        <activity
+            android:name="com.kmwlyy.login.WebViewActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kmwlyy.login.sdk.H5WebViewActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.kmwlyy.login.sdk.NewH5WebViewActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lzy.ninegrid.preview.ImagePreviewActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name="com.soundcloud.android.crop.CropImageActivity" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.hjy.sports.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name="com.darsh.multipleimageselect.activities.AlbumSelectActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/MultipleImageSelectTheme" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.darsh.multipleimageselect.activities.ImageSelectActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/MultipleImageSelectTheme" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="com.just.agentweb.AgentWebFileProvider"
+            android:authorities="com.hjy.sports.AgentWebFileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/web_files_paths" />
+        </provider>
+
+        <activity
+            android:name="com.just.agentweb.ActionActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:launchMode="standard"
+            android:theme="@style/actionActivity"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" >
+        </activity>
+
+        <receiver android:name="com.just.agentweb.DownLoader$NotificationBroadcastReceiver" />
+
+        <meta-data
+            android:name="android.arch.lifecycle.VERSION"
+            android:value="27.0.0-SNAPSHOT" />
+    </application>
+
+</manifest>

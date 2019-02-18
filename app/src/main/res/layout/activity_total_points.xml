@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_bule_bottom_shadow"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/spacing_medium_small"
+            android:paddingTop="@dimen/spacing_medium_small">
+
+            <TextView
+                android:id="@+id/tv_type"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingLeft="@dimen/spacing_medium_small"
+                android:paddingRight="@dimen/spacing_medium_small"
+                android:textColor="@color/txtSecondColor"
+                android:textSize="@dimen/textSize_medium"
+                android:textStyle="" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/spacing_medium_small"
+                android:src="@mipmap/icon_fighting" />
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/ll_expand"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:paddingBottom="@dimen/spacing_medium_small">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_expand"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@mipmap/pull_down_gray_bg"-->
+                <!--android:gravity="center"-->
+                <!--android:text="点击展开更多"-->
+                <!--android:textSize="@dimen/textSize_small_much" />-->
+        <!--</LinearLayout>-->
+
+        <!--<TableLayout-->
+            <!--android:id="@+id/tab_layout"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@color/BgColor"-->
+            <!--android:paddingBottom="@dimen/spacing_medium_small"-->
+            <!--android:visibility="gone">-->
+
+            <!--<TableRow>-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="全面发展型"-->
+                    <!--android:textColor="@color/txtLight"-->
+                    <!--android:textSize="@dimen/sp_12" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="全面均衡型"-->
+                    <!--android:textColor="@color/txtLight"-->
+                    <!--android:textSize="@dimen/sp_12" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="单一短板型"-->
+                    <!--android:textColor="@color/txtLight"-->
+                    <!--android:textSize="@dimen/sp_12" />-->
+
+            <!--</TableRow>-->
+
+            <!--<TableRow android:layout_marginTop="@dimen/spacing_medium">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="双项短板型"-->
+                    <!--android:textColor="@color/txtLight"-->
+                    <!--android:textSize="@dimen/sp_12" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="多项短板型"-->
+                    <!--android:textColor="@color/txtLight"-->
+                    <!--android:textSize="@dimen/sp_12" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="多项弱化型"-->
+                    <!--android:textColor="@color/txtLight"-->
+                    <!--android:textSize="@dimen/sp_12" />-->
+
+            <!--</TableRow>-->
+        <!--</TableLayout>-->
+
+        <com.github.mikephil.charting.charts.RadarChart
+            android:id="@+id/radarChart"
+            android:layout_width="match_parent"
+            android:layout_height="240dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_medium_small"
+            android:background="@color/shi_huang"
+            android:gravity="center"
+            android:paddingBottom="@dimen/spacing_small"
+            android:paddingTop="@dimen/spacing_small"
+            android:text="我　的　排　名"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_medium_small"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!--全班级-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/spacing_medium_small"
+                android:paddingTop="@dimen/spacing_medium_large">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_the_whole_class" />
+
+                <TextView
+                    android:id="@+id/tv_class"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_medium_small"
+                    android:text="你已经击败全班78%的同龄人"
+                    android:textColor="@color/txtSecondColor"
+                    android:textSize="@dimen/textSize_small_much" />
+
+                <TextView
+                    android:id="@+id/tv_class_rank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="排名第7869"
+                    android:textColor="@color/txtSecondColor"
+                    android:textSize="@dimen/textSize_small_much" />
+            </LinearLayout>
+
+            <!--全年级-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/BgColor"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/spacing_medium_small"
+                android:paddingTop="@dimen/spacing_medium_large">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_the_whole_grade" />
+
+                <TextView
+                    android:id="@+id/tv_grade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_medium_small"
+                    android:text="你已经击败全年级78%的同龄人"
+                    android:textColor="@color/txtSecondColor"
+                    android:textSize="@dimen/textSize_small_much" />
+
+                <TextView
+                    android:id="@+id/tv_grade_rank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="排名第7869"
+                    android:textColor="@color/txtSecondColor"
+                    android:textSize="@dimen/textSize_small_much" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!--全市-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/BgColor"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/spacing_medium_small"
+                android:paddingTop="@dimen/spacing_medium_large">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_the_whole_city" />
+
+                <TextView
+                    android:id="@+id/tv_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_medium_small"
+                    android:text="你已经击败全市78%的同龄人"
+                    android:textColor="@color/txtSecondColor"
+                    android:textSize="@dimen/textSize_small_much" />
+
+                <TextView
+                    android:id="@+id/tv_city_rank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="排名第7869"
+                    android:textColor="@color/txtSecondColor"
+                    android:textSize="@dimen/textSize_small_much" />
+            </LinearLayout>
+            <!--全国-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/spacing_medium_small"
+                android:paddingTop="@dimen/spacing_medium_large">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_nationwide" />
+
+                <TextView
+                    android:id="@+id/tv_nationwide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_medium_small"
+                    android:text="你已经击败全国78%的同龄人"
+                    android:textColor="@color/txtSecondColor"
+                    android:textSize="@dimen/textSize_small_much" />
+
+                <TextView
+                    android:id="@+id/tv_nationwide_rank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="排名第7869"
+                    android:textColor="@color/txtSecondColor"
+                    android:textSize="@dimen/textSize_small_much" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

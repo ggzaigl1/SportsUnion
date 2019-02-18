@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appHeadBg"
+    android:orientation="vertical">
+
+
+    <!--<com.haibin.calendarview.CalendarLayout-->
+    <!--android:id="@+id/calendarLayout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@color/white"-->
+    <!--android:orientation="vertical"-->
+    <!--app:calendar_content_view_id="@+id/nested"-->
+    <!--app:default_status="shrink"-->
+    <!--app:only_week_view="true">-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!--<com.haibin.calendarview.CalendarView-->
+    <!--android:id="@+id/calendarView"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="#fff"-->
+    <!--app:current_month_lunar_text_color="#CFCFCF"-->
+    <!--app:current_month_text_color="#333333"-->
+    <!--app:day_text_size="18sp"-->
+    <!--app:min_year="2004"-->
+    <!--app:month_view="com.hjy.sports.widget.indexView.SimpleMonthView"-->
+    <!--app:month_view_show_mode="mode_only_current"-->
+    <!--app:other_month_text_color="#e1e1e1"-->
+    <!--app:scheme_text="假"-->
+    <!--app:scheme_text_color="#333"-->
+    <!--app:scheme_theme_color="#128c4b"-->
+    <!--app:selected_lunar_text_color="#CFCFCF"-->
+    <!--app:selected_text_color="#333"-->
+    <!--app:selected_theme_color="#80cfcfcf"-->
+    <!--app:week_background="#fff"-->
+    <!--app:week_text_color="#111"-->
+    <!--app:week_view="com.hjy.sports.widget.indexView.SimpleWeekView"-->
+    <!--app:year_view_day_text_color="#333333"-->
+    <!--app:year_view_day_text_size="9sp"-->
+    <!--app:year_view_month_text_color="#ff0000"-->
+    <!--app:year_view_month_text_size="20sp"-->
+    <!--app:year_view_scheme_color="#f17706" />-->
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nested"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_marginLeft="@dimen/spacing_medium_small"
+                    android:layout_marginRight="@dimen/spacing_medium_small"
+                    android:id="@+id/imgHead"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/stamina_bg" />
+
+                <TextView
+                    android:id="@+id/tv_today_recommend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:text="今日推荐：感统"
+                    android:textColor="@color/button_normal"
+                    android:textSize="23dp" />
+
+                <TextView
+                    android:id="@+id/tv_alarm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:padding="6dp"
+                    android:text="警戒值：65"
+                    android:textColor="@color/orange"
+                    android:textSize="23dp" />
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/lineColor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_standard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="@dimen/sp_12"
+                    android:layout_marginEnd="12dp"
+                    android:text="检测标准:"
+                    android:textColor="@color/txtSuperColor"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/stamina_edit_bg"
+                    android:text="@string/stamina_standard"
+                    android:textSize="@dimen/sp_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_harm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="@dimen/sp_12"
+                    android:layout_marginEnd="12dp"
+                    android:textColor="@color/txtSuperColor"
+                    android:text="健康危害:"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/stamina_edit_bg"
+                    android:text="@string/stamina_standard"
+                    android:textSize="@dimen/sp_14" />
+            </LinearLayout>
+
+            <com.hjy.sports.widget.StateButton
+                android:id="@+id/bt_recycleview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:text="提 升 方 案"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_16"
+                app:normalBackgroundColor="@color/favorable_color"
+                app:pressedBackgroundColor="@color/shi_huang"
+                app:radius="2dp"
+                app:round="true" />
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <!--</com.haibin.calendarview.CalendarLayout>-->
+
+</LinearLayout>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+    <ImageView
+            android:background="@mipmap/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <ImageView
+                    android:id="@+id/im_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/banner_basketball"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="30dp"
+                        android:text="初级课程"
+                        android:textColor="@color/txtSuperColor"
+                        android:textSize="16dp"/>
+
+                <TextView
+                        android:id="@+id/tv_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginTop="23dp"
+                        android:lineSpacingExtra="4dp"
+                        android:text="篮球运动是由跑、跳、投等基本动作所组成的一项综合性运动，对提高速度、耐力、灵巧性、弹跳等身体素质起着良好的作用。通过篮球基本技战术的学习，使学生掌握篮球运动的基本知识、基本技术和简单战术，促进篮球运动技术水平的提高。"
+                        android:textColor="@color/txtSecondColor"
+                        android:textSize="14dp"/>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="23dp"
+                            android:text="教练介绍"
+                            android:textColor="@color/txtSuperColor"
+                            android:textSize="16dp"/>
+
+                </LinearLayout>
+
+                <TextView
+                        android:id="@+id/Coach_intro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginTop="23dp"
+                        android:lineSpacingExtra="4dp"
+                        android:text="国家体育总局一级社会体育指导员
+国家健身营养师导师
+主要针对的是对自己的训练姿势或者动作感到
+不甚完美的教练或健身爱好者"
+                        android:textColor="@color/txtSecondColor"
+                        android:textSize="14dp"/>
+
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="23dp"
+                        android:text="注意事情"
+                        android:textColor="@color/txtSuperColor"
+                        android:textSize="16dp"/>
+
+                <TextView
+                        android:id="@+id/needAttention"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginTop="23dp"
+                        android:lineSpacingExtra="4dp"
+                        android:text="不要在打完篮球以后喝碳酸饮料
+不要戴眼镜打篮球，树脂的也不行
+注意保护自己的身体，常带护具
+不要在黑天过多的练球"
+                        android:textColor="@color/txtSecondColor"
+                        android:textSize="14dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:visibility="invisible"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+            android:id="@+id/back"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:text="  返回"
+            android:drawableLeft="@mipmap/back"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:background="#179cf9"
+            android:gravity="center"
+            android:text="立即预约"
+            android:textColor="@color/white"
+            android:textSize="16dp"/>
+
+    <TextView
+        android:id="@+id/tv_coach_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/back"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="196dp"
+        android:layout_toEndOf="@+id/back"
+        android:text="余周周"
+        android:textColor="#179cf9"
+        android:textSize="16dp" />
+</RelativeLayout>

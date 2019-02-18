@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_vertical"
+              android:background="@color/BgColor"
+              android:orientation="vertical">
+
+
+    <ImageView
+            android:id="@+id/imgHead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/banner_stamina_signals"/>
+
+    <!--<FrameLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@mipmap/banner_stamina_signals">-->
+
+        <!--<ImageView-->
+                <!--android:id="@+id/imgHead"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:src="@mipmap/banner_stamina"/>-->
+        <!--<TextView-->
+                <!--android:id="@+id/tv_sensory_grade"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:padding="12dip"-->
+                <!--android:layout_marginBottom="6dp"-->
+                <!--android:textSize="20dp"-->
+                <!--android:textColor="@color/button_normal" />-->
+        <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_marginTop="28dp"-->
+                <!--android:textSize="14sp"-->
+                <!--android:text="体能评分"-->
+                <!--android:textColor="@color/white" />-->
+
+    <!--</FrameLayout>-->
+
+    <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+                android:id="@+id/llInfo2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="20dp">
+
+                <TextView
+                        android:id="@+id/tv_score"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawablePadding="10dp"
+                        android:text="感统的意义"
+                        android:drawableLeft="@mipmap/sensory_blue"
+                        android:layout_marginLeft="@dimen/spacing_medium_small"
+                        android:textColor="@color/txtSuperColor"
+                        android:textSize="@dimen/textSize_medium_small"/>
+
+                <TextView
+                        android:id="@+id/tv_sensory_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="更多"
+                        android:gravity="center_vertical"
+                        android:drawableRight="@mipmap/right_sensory"
+                        android:layout_marginRight="12dp"
+                        android:textColor="@color/txtSuperColor"
+                        android:textSize="@dimen/textSize_small"/>
+
+            </LinearLayout>
+
+            <TextView
+                    android:id="@+id/tv_score_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/sensory_context"
+                    android:textColor="@color/txtSecondColor"
+                    android:lineSpacingExtra="4dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:textSize="@dimen/textSize_small"/>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/spacing_medium_small"
+                    android:background="@color/BgColor"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="15dp">
+
+                <TextView
+                        android:id="@+id/tv_sensory_content"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawablePadding="10dp"
+                        android:text="感统练习方式"
+                        android:drawableLeft="@mipmap/sensory_blue"
+                        android:layout_marginLeft="@dimen/spacing_medium_small"
+                        android:textColor="@color/txtSuperColor"
+                        android:textSize="@dimen/textSize_medium_small"/>
+
+                <TextView
+                        android:id="@+id/tv_sensory_main"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@mipmap/right_sensory"
+                        android:text="更多"
+                        android:gravity="center_vertical"
+                        android:layout_marginEnd="12dp"
+                        android:textColor="@color/txtSuperColor"
+                        android:textSize="@dimen/textSize_small"/>
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                    android:id="@+id/ry_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none"/>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

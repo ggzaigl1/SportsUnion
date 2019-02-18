@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CalendarLayout"><attr name="default_status">
+            <enum name="expand" value="0"/>
+            <enum name="shrink" value="1"/>
+        </attr><attr format="boolean" name="only_week_view"/><attr format="integer" name="calendar_content_view_id"/></declare-styleable>
+    <declare-styleable name="CalendarView"><attr format="color" name="week_background"/><attr format="color" name="week_line_background"/><attr format="color" name="week_text_color"/><attr format="string" name="calendar_card_view"/><attr format="string" name="month_view"/><attr format="string" name="week_view"/><attr format="string" name="week_bar_view"/><attr format="string" name="scheme_text"/><attr format="dimension" name="day_text_size"/><attr format="dimension" name="lunar_text_size"/><attr format="dimension" name="calendar_height"/><attr format="color" name="scheme_text_color"/><attr format="color" name="scheme_month_text_color"/><attr format="color" name="scheme_lunar_text_color"/><attr format="color" name="scheme_theme_color"/><attr format="color" name="selected_theme_color"/><attr format="color" name="selected_text_color"/><attr format="color" name="selected_lunar_text_color"/><attr format="color" name="current_day_text_color"/><attr format="color" name="current_day_lunar_text_color"/><attr format="color" name="current_month_text_color"/><attr format="color" name="other_month_text_color"/><attr format="color" name="current_month_lunar_text_color"/><attr format="color" name="other_month_lunar_text_color"/><attr format="dimension" name="year_view_month_text_size"/><attr format="dimension" name="year_view_day_text_size"/><attr format="color" name="year_view_month_text_color"/><attr format="color" name="year_view_day_text_color"/><attr format="color" name="year_view_scheme_color"/><attr format="color" name="year_view_background"/><attr format="integer" name="min_year"/><attr format="integer" name="max_year"/><attr format="integer" name="min_year_month"/><attr format="integer" name="max_year_month"/><attr name="month_view_show_mode">
+            <enum name="mode_all" value="0"/>
+            <enum name="mode_only_current" value="1"/>
+            <enum name="mode_fix" value="2"/>
+        </attr></declare-styleable>
+    <string name="app_name">CalendarView</string>
+</resources>

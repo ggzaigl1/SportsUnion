@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/white"
+            >
+
+        <TextView
+                android:id="@+id/tvSelfItem"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="12dp"
+                android:text="123"
+                android:textColor="@color/txtSecondColor"
+                android:textSize="@dimen/textSize_medium_small"/>
+        <!-- 测试结果 成绩文字-->
+        <TextView
+                android:id="@+id/tvSelfItem_performance"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/sp_12"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="123"
+                android:textColor="@color/txtSecondColor"
+                android:textSize="@dimen/textSize_medium_small"/>
+
+    </LinearLayout>
+
+    <View
+            android:layout_marginRight="1dp"
+            android:layout_marginLeft="1dp"
+            android:background="@color/lineColor"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+</LinearLayout>

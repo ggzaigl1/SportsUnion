@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:background="@color/white"
+              android:layout_marginTop="18dp">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="主要问题"
+            android:drawableLeft="@mipmap/sensory_blue"
+            android:layout_marginLeft="@dimen/spacing_medium_small"
+            android:textColor="@color/txtSuperColor"
+            android:textSize="@dimen/textSize_medium_small"/>
+
+</LinearLayout>

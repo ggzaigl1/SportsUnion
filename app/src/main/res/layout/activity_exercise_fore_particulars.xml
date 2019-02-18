@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:layout_marginTop="10dp"
+              android:orientation="vertical">
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_small"
+            android:background="@color/BgColor"/>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="20dp"
+                    android:drawableLeft="@drawable/ic_white_back"
+                    android:textColor="@color/txtSuperColor"
+                    android:textSize="@dimen/textSize_medium_small"/>
+
+            <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/image_pic"
+                    android:layout_width="350dp"
+                    android:layout_height="167dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/first_aid_fore"/>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="安全等级"
+                    android:padding="12dp"
+                    android:drawableLeft="@mipmap/sensory_blue"
+                    android:drawablePadding="10dp"
+                    android:textColor="@color/txtSuperColor"/>
+
+            <TextView
+                    android:id="@+id/tv_sportsMatter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    />
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="症状表现"
+                        android:padding="12dp"
+                        android:drawableLeft="@mipmap/sensory_blue"
+                        android:drawablePadding="10dp"
+                        android:textColor="@color/txtSuperColor"/>
+
+                <TextView
+                        android:id="@+id/tv_sportsStep"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="急救方法"
+                        android:padding="12dp"
+                        android:drawableLeft="@mipmap/sensory_blue"
+                        android:drawablePadding="10dp"
+                        android:textColor="@color/txtSuperColor"/>
+
+                <TextView
+                        android:id="@+id/tv_dispose"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+

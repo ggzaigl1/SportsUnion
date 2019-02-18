@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/spacing_medium">
+
+    <TextView
+        android:id="@+id/tvDialogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/spacing_medium"
+        android:background="@drawable/shape_dialog_top_bg"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="标题"
+        android:textColor="@color/txtSecondColor"
+        android:textSize="@dimen/textSize_medium_small" />
+
+    <EditText
+        android:id="@+id/editContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_edit_bg"
+        android:padding="@dimen/spacing_medium"
+        android:gravity="center"
+        android:hint="手机号码"
+        android:inputType="number"
+        android:maxEms="11"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/txtSecondColor"
+        android:textSize="@dimen/textSize_small"
+        app:layout_constraintTop_toBottomOf="@+id/tvDialogTitle" />
+
+    <TextView
+        android:id="@+id/tvDialogCancel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_btn_leftbottom_radian"
+        android:padding="@dimen/spacing_medium"
+        android:gravity="center"
+        android:text="@string/cancel"
+        android:textColor="@color/txtSuperColor"
+        android:textSize="@dimen/textSize_small"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tvDialogOk"
+        app:layout_constraintTop_toBottomOf="@+id/editContent" />
+
+    <TextView
+        android:id="@+id/tvDialogOk"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_btn_rightbottom_radian"
+        android:padding="@dimen/spacing_medium"
+        android:gravity="center"
+        android:text="@string/ok"
+        android:textColor="@color/txtSuperColor"
+        android:textSize="@dimen/textSize_small"
+        app:layout_constraintLeft_toRightOf="@+id/tvDialogCancel"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editContent" />
+
+</android.support.constraint.ConstraintLayout>

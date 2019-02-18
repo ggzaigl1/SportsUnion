@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/BgColor"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp">
+
+    <TextView
+        android:id="@+id/tv_grade"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_stature"
+        android:gravity="center"
+        android:paddingBottom="12dp"
+        android:paddingTop="12dp"
+        android:text="一年级"
+        android:singleLine="true"
+        android:textColor="@color/login"
+        android:textSize="@dimen/textSize_small" />
+
+    <com.hjy.sports.widget.TimeLineMarker
+        android:id="@+id/time_line"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        app:beginLine="@drawable/shape_imaginary_line"
+        app:endLine="@drawable/shape_imaginary_line"
+        app:marker="@mipmap/icon_time"
+        app:oritation="false" />
+
+
+    <TextView
+        android:id="@+id/tv_stature"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/shape_stature"
+        android:gravity="center_vertical"
+        android:padding="@dimen/spacing_medium_small"
+        android:text="身高86cm"
+        android:ellipsize="end"
+        android:textColor="@color/txtSecondColor"
+        android:textSize="@dimen/textSize_small" />
+
+
+</LinearLayout>

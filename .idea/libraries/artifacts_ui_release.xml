@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="artifacts:ui-release">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/ui-release.aar/1f1d7aa87ec70a95a0499e06d6890afa/jars/libs/universal-image-loader-1.9.3-with-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/ui-release.aar/1f1d7aa87ec70a95a0499e06d6890afa/jars/libs/xUtils-2.6.14.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/ui-release.aar/1f1d7aa87ec70a95a0499e06d6890afa/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/ui-release.aar/1f1d7aa87ec70a95a0499e06d6890afa/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

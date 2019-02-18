@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BgColor">
+
+    <LinearLayout
+        android:id="@+id/ll_gradient"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_medium_small"
+        android:layout_marginRight="@dimen/spacing_medium_small"
+        android:layout_marginTop="@dimen/spacing_small"
+        android:background="@drawable/shape_body_detection"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="低"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_small" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="中"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_small" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="高"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_small" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="@dimen/spacing_medium_small"
+        android:drawablePadding="@dimen/spacing_medium_small"
+        android:text="三年级"
+        android:textColor="@color/txtSuperColor"
+        android:textSize="@dimen/spacing_medium"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_gradient" />
+
+    <ImageView
+        android:id="@+id/iv_boy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/icon_boy"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_grade" />
+
+    <TextView
+        android:id="@+id/tv_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@mipmap/icon_electronic_scale"
+        android:gravity="center|bottom"
+        android:paddingBottom="12dp"
+        android:text="45kg"
+        android:textColor="@color/txtSuperColor"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_boy" />
+    <!--android:layout_marginLeft="@dimen/spacing_medium_small"-->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/spacing_medium_small"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_weight"
+        app:layout_constraintLeft_toRightOf="@+id/iv_boy"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_gradient">
+
+        <TextView
+            android:id="@+id/tv_height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/icon_bubble"
+            android:gravity="center"
+            android:paddingBottom="6dp"
+            android:paddingRight="6dp"
+            android:text="100.0"
+            android:textSize="13sp" />
+
+
+        <com.hjy.sports.widget.RulerView
+            android:id="@+id/height_ruler"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            app:rulerColor="#666666"
+            app:rulerDivideByFiveHeight="20dp"
+            app:rulerDivideByFiveWidth="2dp"
+            app:rulerDivideByTenHeight="25dp"
+            app:rulerDivideByTenWidth="3dp"
+            app:rulerHighlightColor="#f00"
+            app:rulerIntervalDistance="5dp"
+            app:rulerIntervalValue="0.1"
+            app:rulerIsDivideByFive="true"
+            app:rulerIsDivideByTen="true"
+            app:rulerLineHeight="15dp"
+            app:rulerLineWidth="1dp"
+            app:rulerMaxValue="200"
+            app:rulerMinValue="50"
+            app:rulerOrientation="vertical"
+            app:rulerRetainLength="1"
+            app:rulerTextBaseLineDistance="3dp"
+            app:rulerTextColor="#666666"
+            app:rulerTextSize="13sp" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_weight">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "E:\\Personage\\yidong\\tizhijiance\\code\\android\\SportsUnion\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-port\\values-port.xml",
+            "map": [
+                {
+                    "source": "D:\\AndroidTools\\AndroidGradle\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.1.aar\\93b85fea2eabdac8e4a7c2a7d492d32c\\res\\values-port\\values-port.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_stamina_ll"
+    android:layout_width="wrap_content"
+    android:layout_height="80dp"
+    android:minWidth="20dp"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:padding="8dp"
+        android:id="@+id/item_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/shape_stamina_calendar"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="日"
+            android:textColor="@color/calendar_week_color"
+            android:textSize="@dimen/textSize_medium_small" />
+
+        <TextView
+            android:layout_marginTop="@dimen/spacing_medium_small"
+            android:id="@+id/tv_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="23"
+            android:textColor="@color/calendar_day_color"
+            android:textSize="@dimen/textSize_medium_small" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <compositeConfiguration>
+          <compositeBuild compositeDefinitionSource="SCRIPT" />
+        </compositeConfiguration>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/agora-release" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/baselibrary" />
+            <option value="$PROJECT_DIR$/calendarview" />
+            <option value="$PROJECT_DIR$/chartlibrary" />
+            <option value="$PROJECT_DIR$/core-release" />
+            <option value="$PROJECT_DIR$/imchat-release" />
+            <option value="$PROJECT_DIR$/imgPicker" />
+            <option value="$PROJECT_DIR$/lib_login-release" />
+            <option value="$PROJECT_DIR$/pickerdate" />
+            <option value="$PROJECT_DIR$/ui-release" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

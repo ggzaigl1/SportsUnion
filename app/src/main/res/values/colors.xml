@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="shape_gradient_startColor">#7dc3f8</color>
+
+    <color name="shape_gradient_centerColor">#1aa6fa</color>
+
+    <color name="shape_gradient_endColor">#0793fd</color>
+
+    <color name="suggest_title">#ffbd66</color>
+
+    <color name="circle_one">#ff7eaa</color>
+
+    <color name="circle_three">#9ecc12</color>
+
+    <color name="center_text_color">#797777</color>
+
+    <color name="home_name_color">#2ba1fb</color>
+
+    <color name="line_color">#dcdcdc</color>
+
+    <!--良好-->
+    <color name="favorable_color">#fea939</color>
+
+    <color name="shi_huang">#f6bc6b</color>
+
+    <!-- 优秀 -->
+    <color name="excellent">#2ba1fb</color>
+    <!-- 良好 -->
+    <color name="fine">#fea939</color>
+    <!-- 及格 -->
+    <color name="pass">#a4d11a</color>
+    <!-- 不及格 -->
+    <color name="noPass">#bb0505</color>
+
+    <color name="gray">#e0dfdf</color>
+
+    <color name="color_blue">#44acff</color>
+
+    <color name="pk_content_color">#fbac43</color>
+
+    <color name="pk_mean_color">#36a1f3</color>
+
+    <color name="calendar_week_color">#a9acb4</color>
+
+    <color name="calendar_day_color">#555554</color>
+
+</resources>

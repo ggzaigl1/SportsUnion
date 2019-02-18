@@ -1,0 +1,136 @@
+<resources>
+    <string name="app_name">体质与健康</string>
+
+    <string name="mainTabOne">首页</string>
+    <string name="mainTabTwo">活动中心</string>
+    <string name="mainTabT">新华社</string>
+    <string name="mainTabThree">新品推荐</string>
+    <string name="mainTabThr">网信办舆情</string>
+    <string name="mainTabFour">校园圈</string>
+    <string name="mainTabFive">我的</string>
+    <string name="DietList">饮食处方</string>
+    <string name="selfEvaluation">自我检测</string>
+    <string name="record">记录</string>
+
+    <string name="userName">账号：</string>
+    <string name="passWord">密码：</string>
+    <string name="rememberPass">记住密码</string>
+    <string name="loginTitel">全 国 学 校 体 育 联 盟\nThe National School Physical Education Leagues</string>
+
+    <string name="juzi">我运动、我快乐，我锻炼、我提高</string>
+
+    <string name="age">%1$s\n年龄</string>
+    <string name="height">%1$s\n身高(cm)</string>
+    <string name="weight">%1$s\n体重(kg)</string>
+
+    <string name="schoolNum">学籍号</string>
+    <string name="birthday">出生日期</string>
+    <string name="grade">年级</string>
+    <string name="classGrade">班级</string>
+    <string name="school">学校</string>
+    <string name="parentPhone">家长电话</string>
+    <string name="modifyPass">修改密码</string>
+
+    <string name="myData">个人资料</string>
+    <string name="imgHead">头像</string>
+    <string name="sex">性别</string>
+    <string name="nation">民族</string>
+    <string name="agemodify">年龄</string>
+    <string name="heightModify">身高(cm)</string>
+    <string name="weightModify">体重(kg)</string>
+
+    <string name="body_detection">形体机体检测结果分析</string>
+    <string name="physical_fitness">体能测试结果分析</string>
+    <string name="meals_recommend">膳食推荐</string>
+    <string name="thin_n">偏\n瘦</string>
+    <string name="normal_n">标\n准</string>
+    <string name="littlefat_n">超\n重</string>
+    <string name="overweight_n">肥\n胖</string>
+
+
+    <string name="monday">周\n一</string>
+    <string name="tuesday">周\n二</string>
+    <string name="wednesday">周\n三</string>
+    <string name="thursday">周\n四</string>
+    <string name="friday">周\n五</string>
+    <string name="saturday">周\n六</string>
+    <string name="sunday">周\n日</string>
+
+    <string name="sports_suggest">运动建议</string>
+
+    <!-- 数据模块 -->
+    <string name="data1">身高</string>
+    <string name="data2">体重</string>
+    <string name="data3">总分</string>
+    <string name="data4">BMI</string>
+    <string name="data5">肺活量</string>
+    <string name="data6">50米</string>
+    <string name="data7">坐位体前屈</string>
+    <string name="data8">跳绳</string>
+    <string name="data9">仰卧起坐</string>
+    <string name="data10">往返跑</string>
+    <string name="data11">立定跳远</string>
+
+    <string name="publishingDynamics">发布动态</string>
+    <string name="publishing">发布</string>
+    <string name="publishingTips">分享此刻的心情</string>
+
+    <string name="deleteing">正在删除</string>
+
+    <string name="my_school_friends">我的校园圈</string>
+
+    <string name="loginTitel2">( 教 学 改 革 )\n(Education Reform)</string>
+
+    <string name="praise">点赞</string>
+
+    <string name="cancel_praise">取消点赞</string>
+
+    <string name="my_social">我的动态</string>
+    <string name="web_error">抱歉~\n加载失败,点击重新加载</string>
+    <string name="self_check_data">数据自我检测</string>
+    <string name="self_check_hint">输入数值</string>
+
+    <string name="tv_figure">体形</string>
+    <string name="tv_stamina">体能</string>
+    <string name="tv_standard">达标</string>
+    <string name="tv_sensory_integration">感统</string>
+    <string name="tv_record">档案</string>
+
+    <string name="expand_one">专\n家\n咨\n询</string>
+    <string name="expand_two">健\n康\n常\n识</string>
+    <string name="expand_three">我\n的\n私\n教</string>
+    <string name="expand_four">运\n动\n课\n程</string>
+    <string name="club_intro"> \t\t\t\t\ 俱乐部，成立于2013年初。它是由几名资深驴友和户外达人组建的一家专业的自助户外旅行和团队拓展训练为主的户外活动组织。地不分南北，人不分老幼，我们秉承不抛弃，不放弃，不嫌弃之原则，带大家回归自然。\n\t\t\t\t俱乐部以推动全民健康户外为己任，以“平安、健康、快乐”为宗旨，提倡融入自然，享受生活，快乐工作的户外理念。旨在为广大北漂群体和广大户外爱好者提供一个积极向上，良性互动，方便交流的户外平台。</string>
+
+    <string name="expand_one_English">Expert&#160;consultation</string>
+    <string name="expand_two_English">Health&#160;knowledge</string>
+    <string name="expand_three_English">My&#160;personal&#160;trainer</string>
+    <string name="expand_four_English">Sports&#160;ornamental</string>
+
+    <string name="no_expand">点击展开更多</string>
+    <string name="is_expand">点击收起</string>
+    <string name="recommend_equipment">器材\n推荐</string>
+
+    <string name="today">今天</string>
+    <string name="Monday">一</string>
+    <string name="Tuesday">二</string>
+    <string name="Wednesday">三</string>
+    <string name="Thursday">四</string>
+    <string name="Friday">五</string>
+    <string name="Saturday">六</string>
+    <string name="Sunday">天</string>
+    <string name="sensory_context">指人脑将各种感觉器官传来的感觉信息进行多次分析、综合处理,并作出正确的应答,使个体在外界环境的刺激中和谐有效地运作。感觉统合功能是认知能力、社会能力、情绪及自我发展的一个重要前提,也是促进大脑充分发育的基础。</string>
+    <string name="home_context">Personal health archives</string>
+    <string name="stamina_standard">根据儿童的年龄将原始分换算成标准分进行评定凡标准分≤40者说明存在感觉统合失调现象。一来说,标准分在30~40之间为轻度;20~30为中度,20分以下为重度。
+    附:6岁以内儿童感觉统合能力评定量表原始分与标准分的换算</string>
+
+    <string name="hight_light">总分界面详情\n点击看看</string>
+
+    <string name="dialog_title">提示</string>
+    <string name="dialog_remind_msg">为了您的账号安全请完善家长电话后再执行此操作，点击确定继续！</string>
+    <string name="set">设置</string>
+    <string name="defaule_first_message">为了您的安全，您需要授权该权限才可以正常使用相关功能哦。</string>
+    <string name="defaule_always_message">当前应用缺少相应的权限，您需要设置相应的权限后才可正常相关功能。</string>
+    <string name="title_activity_start_up">StartUpActivity</string>
+
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/BgColor" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_medium_small"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:text="锻炼项目"
+        android:drawablePadding="@dimen/spacing_medium_small"
+        android:drawableLeft="@mipmap/sensory_blue"
+        android:textStyle="bold"
+        android:textColor="@color/txtSuperColor"
+        android:textSize="@dimen/textSize_medium_small" />
+
+</LinearLayout>

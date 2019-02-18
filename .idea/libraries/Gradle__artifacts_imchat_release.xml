@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: artifacts:imchat-release">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/imchat-release.aar/9d2fe6f69a2349bc98a15647799bfd3a/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/imchat-release.aar/9d2fe6f69a2349bc98a15647799bfd3a/jars/libs/libammsdk.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/imchat-release.aar/9d2fe6f69a2349bc98a15647799bfd3a/jars/libs/tls_sdk.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/imchat-release.aar/9d2fe6f69a2349bc98a15647799bfd3a/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/imchat-release.aar/9d2fe6f69a2349bc98a15647799bfd3a/jars/libs/mobilepb.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/imchat-release.aar/9d2fe6f69a2349bc98a15647799bfd3a/jars/libs/imsdk.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/imchat-release.aar/9d2fe6f69a2349bc98a15647799bfd3a/jars/libs/wup-1.0.0-SNAPSHOT.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/imchat-release.aar/9d2fe6f69a2349bc98a15647799bfd3a/jars/libs/qalsdk.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

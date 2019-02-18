@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/BgColor">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/sports_bg">
+
+        <RelativeLayout
+            android:id="@+id/rl_week"
+            android:layout_width="match_parent"
+            android:layout_height="90dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@mipmap/half_circle_bg"/>
+
+            <TextView
+                android:id="@+id/tv_monday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_medium_small"
+                android:layout_marginTop="6dp"
+                android:background="@mipmap/icon_circle"
+                android:gravity="center"
+                android:text="周一" />
+
+            <TextView
+                android:id="@+id/tv_tuesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_medium_small"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/tv_monday"
+                android:background="@mipmap/icon_circle"
+                android:gravity="center"
+                android:text="周二" />
+
+            <TextView
+                android:id="@+id/tv_wednesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_medium_small"
+                android:layout_marginTop="45dp"
+                android:layout_toRightOf="@+id/tv_tuesday"
+                android:background="@mipmap/icon_circle"
+                android:gravity="center"
+                android:text="周三" />
+
+            <TextView
+                android:id="@+id/tv_thursday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/icon_circle"
+                android:gravity="center"
+                android:text="周四" />
+
+            <TextView
+                android:id="@+id/tv_friday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/spacing_medium_small"
+                android:layout_marginTop="45dp"
+                android:layout_toLeftOf="@+id/tv_saturday"
+                android:background="@mipmap/icon_circle"
+                android:gravity="center"
+                android:text="周五" />
+
+            <TextView
+                android:id="@+id/tv_saturday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/spacing_medium_small"
+                android:layout_marginTop="30dp"
+
+                android:layout_toLeftOf="@+id/tv_sunday"
+                android:background="@mipmap/icon_circle"
+                android:gravity="center"
+                android:text="周六" />
+
+            <TextView
+                android:id="@+id/tv_sunday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/spacing_medium_small"
+                android:layout_marginTop="6dp"
+                android:background="@mipmap/icon_circle"
+                android:gravity="center"
+                android:text="周日" />
+
+        </RelativeLayout>
+
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_suggest"
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="110dp"
+        android:background="@mipmap/icon_sports_suggest">
+
+        <TextView
+            android:id="@+id/sports_suggest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="22dp"
+            android:text="运动温馨小提示"
+            android:textColor="@color/suggest_title"
+            android:textSize="@dimen/textSize_medium_small" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sports_suggest"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="@dimen/spacing_medium_small"
+            android:gravity="left|center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/icon_dot"
+                android:drawablePadding="@dimen/spacing_medium_small"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textStyle="bold"
+                android:text="热身活动要充分,防止肌肉关节拉伤,防止肌肉关节拉伤"
+                android:textColor="@color/txtSuperColor"
+                android:textSize="@dimen/textSize_small" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/icon_dot"
+                android:drawablePadding="@dimen/spacing_medium_small"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textStyle="bold"
+                android:text="衣着厚薄要适宜,防止感冒生病"
+                android:textColor="@color/txtSuperColor"
+                android:textSize="@dimen/textSize_small" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/icon_dot"
+                android:drawablePadding="@dimen/spacing_medium_small"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="运动环境要舒适,防止吸入不良气体"
+                android:textStyle="bold"
+                android:textColor="@color/txtSuperColor"
+                android:textSize="@dimen/textSize_small" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/linearLayout"
+                android:layout_alignTop="@+id/imageView"
+                android:drawableLeft="@mipmap/icon_dot"
+                android:drawablePadding="@dimen/spacing_medium_small"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textStyle="bold"
+                android:text="呼吸方法要正确,不要张大嘴呼吸"
+                android:textColor="@color/txtSuperColor"
+                android:textSize="@dimen/textSize_small" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/icon_football" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

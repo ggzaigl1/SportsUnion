@@ -1,0 +1,60 @@
+{
+    "logs": [
+        {
+            "outputFile": "E:\\Personage\\yidong\\tizhijiance\\code\\android\\SportsUnion\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh-rTW\\values-zh-rTW.xml",
+            "map": [
+                {
+                    "source": "D:\\AndroidTools\\AndroidGradle\\.gradle\\caches\\transforms-1\\files-1.1\\lib_crop-1.0.0.aar\\58f75e215ea021093a23b02d1ba5a7e6\\res\\values-zh-rTW\\values-zh-rTW.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "100,168,210,265,314",
+                        "endColumns": "67,41,54,48,43",
+                        "endOffsets": "163,205,260,309,353"
+                    },
+                    "to": {
+                        "startLines": "19,20,21,22,23",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "1778,1846,1888,1943,1992",
+                        "endColumns": "67,41,54,48,43",
+                        "endOffsets": "1841,1883,1938,1987,2031"
+                    }
+                },
+                {
+                    "source": "D:\\AndroidTools\\AndroidGradle\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.1.aar\\93b85fea2eabdac8e4a7c2a7d492d32c\\res\\values-zh-rTW\\values-zh-rTW.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,200,293,393,475,572,680,756,832,910,1006,1102,1197,1294,1389,1489,1639,1733",
+                        "endColumns": "94,92,99,81,96,107,75,75,77,95,95,94,96,94,99,149,93,77",
+                        "endOffsets": "195,288,388,470,567,675,751,827,905,1001,1097,1192,1289,1384,1484,1634,1728,1806"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,24",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "150,245,338,438,520,617,725,801,877,955,1051,1147,1242,1339,1434,1534,1684,2036",
+                        "endColumns": "94,92,99,81,96,107,75,75,77,95,95,94,96,94,99,149,93,77",
+                        "endOffsets": "240,333,433,515,612,720,796,872,950,1046,1142,1237,1334,1429,1529,1679,1773,2109"
+                    }
+                },
+                {
+                    "source": "D:\\AndroidTools\\AndroidGradle\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.1.aar\\811cd02fc4184a94134e14a5133aee7d\\res\\values-zh-rTW\\values-zh-rTW.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "25",
+                        "startColumns": "4",
+                        "startOffsets": "2114",
+                        "endColumns": "100",
+                        "endOffsets": "2210"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/ll_main_one"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.bigkoo.convenientbanner.ConvenientBanner
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="@color/BgColor"
+            app:canLoop="true" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_personal_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/circle_bg"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_student_photo"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="@dimen/spacing_medium_small"
+                android:src="@mipmap/userimg" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_medium_large"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_student_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/login"
+                    android:textSize="@dimen/textSize_small_much" />
+
+                <TextView
+                    android:id="@+id/tv_student_grade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:textColor="@color/login"
+                    android:textSize="@dimen/textSize_small_much" />
+
+                <TextView
+                    android:id="@+id/tv_student_class"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:textColor="@color/login"
+                    android:textSize="@dimen/textSize_small_much" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_total_grade"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/login"
+                android:textSize="@dimen/textSize_medium" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|left">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_medium_small"
+                android:layout_marginStart="@dimen/spacing_medium_small"
+                android:layout_marginTop="@dimen/spacing_medium_small"
+                android:text="我的成绩"
+                android:textColor="@color/txtSuperColor"
+                android:textSize="@dimen/textSize_medium" />
+
+            <TextView
+                android:id="@+id/tv_hight_light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:background="@mipmap/icon_hight_light"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="12dp"
+                android:text="点击进入总分详情界面"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_medium_small" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_medium_small"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_figure"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="10dp"
+                android:drawableTop="@mipmap/icon_figure"
+                android:gravity="center"
+                android:text="@string/tv_figure"
+                android:textColor="@color/txtSuperColor"
+                android:textSize="@dimen/textSize_small" />
+
+            <TextView
+                android:id="@+id/tv_stamina"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="10dp"
+                android:drawableTop="@mipmap/icon_stamina"
+                android:gravity="center"
+                android:text="@string/tv_stamina"
+                android:textColor="@color/txtSuperColor"
+                android:textSize="@dimen/textSize_small" />
+
+            <TextView
+                android:id="@+id/tv_standard"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="10dp"
+                android:drawableTop="@mipmap/icon_standard"
+                android:gravity="center"
+                android:text="@string/tv_standard"
+                android:textColor="@color/txtSuperColor"
+                android:textSize="@dimen/textSize_small" />
+
+            <TextView
+                android:id="@+id/tv_sensory_integration"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="10dp"
+                android:drawableTop="@mipmap/icon_sensory"
+                android:gravity="center"
+                android:text="@string/tv_sensory_integration"
+                android:textColor="@color/txtSuperColor"
+                android:textSize="@dimen/textSize_small" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="@color/BgColor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_medium_small"
+            android:layout_marginTop="@dimen/spacing_medium_small"
+            android:text="我的锻炼方案"
+            android:textColor="@color/txtSuperColor"
+            android:textSize="@dimen/textSize_medium" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_medium_small"
+            android:layout_marginTop="@dimen/spacing_medium_small"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:id="@+id/ll_sport"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_home_sports" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="运动处方"
+                        android:textColor="@color/txtSuperColor"
+                        android:textSize="@dimen/textSize_small" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="制定运动处方"
+                        android:textColor="@color/txtLight"
+                        android:textSize="@dimen/textSize_small_much" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_diet"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_home_diet" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="饮食建议"
+                        android:textColor="@color/txtSuperColor"
+                        android:textSize="@dimen/textSize_small" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="制定饮食处方"
+                        android:textColor="@color/txtLight"
+                        android:textSize="@dimen/textSize_small_much" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:layout_marginLeft="@dimen/spacing_medium_small"
+            android:layout_marginTop="@dimen/spacing_large"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:id="@+id/ll_self_test"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_self_testing" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="自我评测"
+                        android:textColor="@color/txtSuperColor"
+                        android:textSize="@dimen/textSize_small" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="健康自我评测"
+                        android:textColor="@color/txtLight"
+                        android:textSize="@dimen/textSize_small_much" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_traffic_signal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_traffic_signal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="体能红绿灯"
+                        android:textColor="@color/txtSuperColor"
+                        android:textSize="@dimen/textSize_small" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="体能体质测试"
+                        android:textColor="@color/txtLight"
+                        android:textSize="@dimen/textSize_small_much" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="@color/BgColor" />
+
+
+        <FrameLayout
+            android:id="@+id/fl_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/BgColor">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@mipmap/personag_recorde" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginBottom="5dp"
+                android:paddingRight="14dp"
+                android:text="个人健康档案"
+                android:textColor="@color/green_home"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="12dp"
+                android:text="@string/home_context"
+                android:textColor="@color/green_home"
+                android:textSize="11dp" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="@color/BgColor" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_medium_small"
+            android:layout_marginLeft="@dimen/spacing_medium_large"
+            android:layout_marginRight="@dimen/spacing_medium_large"
+            android:layout_marginTop="@dimen/spacing_medium"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_marginRight="20dp"
+                android:id="@+id/ll_expanded_one"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@mipmap/icon_home_expand_bg"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/expand_one"
+                    android:textColor="@color/txtSuperColor"
+                    android:textSize="@dimen/textSize_medium_small" />
+
+                <com.hjy.sports.widget.VerticleTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/expand_one_English"
+                    android:textColor="@color/txtLight"
+                    android:textSize="@dimen/textSize_small_much" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginRight="30dp"
+                android:id="@+id/ll_expanded_two"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:background="@mipmap/icon_home_expand_bg"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/expand_two"
+                    android:textColor="@color/txtSuperColor"
+                    android:textSize="@dimen/textSize_medium_small" />
+
+                <com.hjy.sports.widget.VerticleTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/expand_two_English"
+                    android:textColor="@color/txtLight"
+                    android:textSize="@dimen/textSize_small_much" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_expanded_four"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_medium_large"
+                android:layout_weight="1"
+                android:background="@mipmap/icon_home_expand_bg"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/expand_four"
+                    android:textColor="@color/txtSuperColor"
+                    android:textSize="@dimen/textSize_medium_small" />
+
+                <com.hjy.sports.widget.VerticleTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/expand_four_English"
+                    android:textColor="@color/txtLight"
+                    android:textSize="@dimen/textSize_small_much" />
+            </LinearLayout>
+
+          <!--  <LinearLayout
+                android:id="@+id/ll_expanded_three"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_medium_large"
+                android:layout_weight="1"
+                android:background="@mipmap/icon_home_expand_bg"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/expand_three"
+                    android:textColor="@color/txtSuperColor"
+                    android:textSize="@dimen/textSize_medium_small" />
+
+                <com.hjy.sports.widget.VerticleTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/expand_three_English"
+                    android:textColor="@color/txtLight"
+                    android:textSize="@dimen/textSize_small_much" />
+
+            </LinearLayout>-->
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="@color/BgColor" />
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,53 @@
+{
+    "logs": [
+        {
+            "outputFile": "E:\\Personage\\yidong\\tizhijiance\\code\\android\\SportsUnion\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en\\values-en.xml",
+            "map": [
+                {
+                    "source": "D:\\AndroidTools\\AndroidGradle\\.gradle\\caches\\transforms-1\\files-1.1\\BaseRecyclerViewAdapterHelper-2.9.30.aar\\383d6b6015b80e0a39ac193193984cdb\\res\\values-en\\values-en.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,105,162",
+                        "endColumns": "49,56,46",
+                        "endOffsets": "100,157,204"
+                    }
+                },
+                {
+                    "source": "D:\\AndroidTools\\AndroidGradle\\.gradle\\caches\\transforms-1\\files-1.1\\takephoto_library-4.0.3.aar\\96043f60d1d729a7fdf8abc393acab90\\res\\values-en\\values-en.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,146,209,292,365,426,531,583,693,823,935,977",
+                        "endColumns": "90,62,82,72,60,104,51,109,129,111,41,66",
+                        "endOffsets": "141,204,287,360,421,526,578,688,818,930,972,1039"
+                    },
+                    "to": {
+                        "startLines": "5,6,7,8,17,18,19,20,21,22,23,24",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "209,300,363,446,909,970,1075,1127,1237,1367,1479,1521",
+                        "endColumns": "90,62,82,72,60,104,51,109,129,111,41,66",
+                        "endOffsets": "295,358,441,514,965,1070,1122,1232,1362,1474,1516,1583"
+                    }
+                },
+                {
+                    "source": "E:\\Personage\\yidong\\tizhijiance\\code\\android\\SportsUnion\\pickerdate\\build\\intermediates\\packaged_res\\debug\\values-en\\values-en.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,108,153,200,249,296,345,399",
+                        "endColumns": "52,44,46,48,46,48,53,45",
+                        "endOffsets": "103,148,195,244,291,340,394,440"
+                    },
+                    "to": {
+                        "startLines": "9,10,11,12,13,14,15,16",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "519,572,617,664,713,760,809,863",
+                        "endColumns": "52,44,46,48,46,48,53,45",
+                        "endOffsets": "567,612,659,708,755,804,858,904"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_user_head"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="@dimen/spacing_medium_small"
+        android:layout_marginTop="@dimen/spacing_medium_small"
+        android:src="@mipmap/ic_launcher_round"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_user_head"
+        app:layout_constraintLeft_toRightOf="@+id/iv_user_head"
+        app:layout_constraintTop_toTopOf="@+id/iv_user_head">
+
+        <TextView
+            android:id="@+id/tv_social_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="胡萝卜嘻嘻嘻嘻"
+            android:textColor="@color/txtSuperColor"
+            android:textSize="@dimen/textSize_medium_small"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_social_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1小时前 来自iPhoneX"
+            android:textColor="@color/txtLight"
+            android:textSize="@dimen/textSize_small_much" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_social_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_medium_small"
+        android:layout_marginRight="@dimen/spacing_medium_small"
+        android:layout_marginTop="@dimen/spacing_medium_small"
+        android:text="所有的结局都已写好 所有的泪水也都已启程 却忽然忘了是怎麽样的一个开始 在那个古老的不再回来的夏日 无论我如何地去追索 年轻的你只如云影掠过"
+        android:textColor="@color/txtSecondColor"
+        android:textSize="@dimen/textSize_medium_small"
+        app:layout_constraintTop_toBottomOf="@+id/iv_user_head" />
+
+
+    <com.hjy.sports.widget.ninegridimageview.NineGridImageView
+        android:id="@+id/nine_grid_image"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        app:imgGap="4dp"
+        app:showStyle="grid"
+        app:singleImgSize="600dp"
+        android:layout_marginLeft="@dimen/spacing_medium_small"
+        android:layout_marginRight="@dimen/spacing_medium_small"
+        app:layout_constraintTop_toBottomOf="@+id/tv_social_content" />
+
+    <View
+        android:id="@+id/item_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/spacing_medium_small"
+        android:layout_marginRight="@dimen/spacing_medium_small"
+        android:layout_marginTop="@dimen/spacing_medium_small"
+        android:background="@color/line_color"
+        app:layout_constraintTop_toBottomOf="@+id/nine_grid_image" />
+
+    <LinearLayout
+        android:id="@+id/ll_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/spacing_medium_small"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/spacing_medium_small"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_line">
+
+        <ImageView
+            android:id="@+id/iv_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_comment_normal" />
+
+        <TextView
+            android:id="@+id/comment_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="237次"
+            android:textColor="@color/txtLight"
+            android:textSize="@dimen/textSize_small" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_praise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/spacing_medium_small"
+        app:layout_constraintRight_toLeftOf="@+id/ll_comment"
+        app:layout_constraintTop_toBottomOf="@+id/item_line">
+
+        <ImageView
+            android:id="@+id/iv_praise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_praise_normal" />
+
+        <TextView
+            android:id="@+id/tv_praise_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="237次"
+            android:textColor="@color/txtLight"
+            android:textSize="@dimen/textSize_small" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:background="@color/BgColor"
+        app:layout_constraintTop_toBottomOf="@+id/ll_praise" />
+
+</android.support.constraint.ConstraintLayout>

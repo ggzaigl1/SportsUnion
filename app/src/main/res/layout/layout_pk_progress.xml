@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- 辅助线 -->
+    <android.support.constraint.Guideline
+        android:id="@+id/guideVertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <!-- 左边 半部分 -->
+    <View
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_blue_stroke"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/guideVertical"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v4.widget.Space
+        android:id="@+id/spaceLeft"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        app:layout_constraintHorizontal_weight="23"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/viewLeft"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/viewLeft"
+        android:layout_width="0dp"
+        android:layout_height="18dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_radian_bg_excellent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_weight="0"
+        app:layout_constraintLeft_toRightOf="@+id/spaceLeft"
+        app:layout_constraintRight_toLeftOf="@+id/guideVertical"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- 右边 半部分 -->
+    <View
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/shape_radian_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/guideVertical"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v4.widget.Space
+        android:id="@+id/spaceRight"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        app:layout_constraintHorizontal_weight="12"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/viewRight"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/viewRight"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/shape_radian_bg_gray"
+        app:layout_constraintHorizontal_weight="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/guideVertical"
+        app:layout_constraintRight_toLeftOf="@+id/spaceRight"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!-- 中间圆形图片 -->
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_fail_win"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@mipmap/icon_fail"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- 底部 文字描述 -->
+    <TextView
+        android:id="@+id/tvLeftDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/spacing_small"
+        android:singleLine="true"
+        android:textColor="@color/txtSecondColor"
+        android:textSize="@dimen/textSize_small"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_fail_win" />
+
+    <TextView
+        android:id="@+id/tvCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/spacing_small"
+        android:singleLine="true"
+        android:textColor="@color/txtSecondColor"
+        android:textSize="@dimen/textSize_small"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_fail_win" />
+
+    <TextView
+        android:id="@+id/tvRightDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/spacing_small"
+        android:singleLine="true"
+        android:textColor="@color/txtSecondColor"
+        android:textSize="@dimen/textSize_small"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_fail_win" />
+
+</android.support.constraint.ConstraintLayout>

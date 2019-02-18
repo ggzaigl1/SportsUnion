@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BgColor"
+    android:orientation="vertical">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabL"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/spacing_small_much"
+        app:tabIndicatorColor="@color/excellent"
+        app:tabIndicatorHeight="3dp"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/excellent"
+        app:tabTextAppearance="@style/TabLayoutTextStyle"
+        app:tabTextColor="@color/txtSecondColor" />
+
+    <RadioGroup
+        android:id="@+id/rgSelf"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/tabL"
+        app:layout_constraintLeft_toLeftOf="@+id/tabL"
+        app:layout_constraintRight_toRightOf="@+id/tabL"
+        app:layout_constraintTop_toTopOf="@+id/tabL">
+
+        <RadioButton
+            android:id="@+id/rbSelfTest"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="自我检测"
+            android:textColor="@color/main_bottom_tab"
+            android:textSize="@dimen/textSize_medium_small" />
+
+        <RadioButton
+            android:id="@+id/rbSelfChallenge"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="自我挑战"
+            android:textColor="@color/main_bottom_tab"
+            android:textSize="@dimen/textSize_medium_small" />
+
+    </RadioGroup>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vpContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabL" />
+
+</android.support.constraint.ConstraintLayout>

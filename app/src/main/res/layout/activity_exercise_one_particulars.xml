@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@mipmap/exercise_particulars"/>
+
+        <TextView
+                android:id="@+id/tv_callback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginLeft="@dimen/spacing_medium_small"
+                android:layout_marginTop="30dp"
+                android:text=""
+                android:gravity="center_vertical"
+                android:drawableLeft="@drawable/ic_white_back"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_medium"/>
+    </RelativeLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+                android:id="@+id/tv_sportsContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="跳绳练习方法"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="12dp"
+                android:textColor="@color/txtSuperColor"/>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_12"
+                android:text="未成年人必须要在监护人的监管下练习"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/txtLight"/>
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/itemSplit_line"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/lineColor"/>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="练习方法"
+                    android:padding="12dp"
+                    android:drawableLeft="@mipmap/sensory_blue"
+                    android:drawablePadding="10dp"
+                    android:textColor="@color/txtSuperColor"/>
+
+            <TextView
+                    android:id="@+id/tv_sportsMatter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:padding="12dp"
+                    android:text="练习方法"/>
+            <!---->
+            <!--<android.support.v7.widget.RecyclerView-->
+                    <!--android:id="@+id/mRecyclerView"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:scrollbars="none"/>-->
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="安全要领"
+                    android:padding="12dp"
+                    android:drawableLeft="@mipmap/sensory_blue"
+                    android:drawablePadding="10dp"
+                    android:textColor="@color/txtSuperColor"/>
+
+            <TextView
+                    android:id="@+id/tv_sportsStep"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:padding="12dp"
+                    android:text="练习方法"/>
+
+            <!--<android.support.v7.widget.RecyclerView-->
+                    <!--android:id="@+id/mRecyclerView_1"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:scrollbars="none"/>-->
+
+        </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+

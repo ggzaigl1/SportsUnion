@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="artifacts:lib_login-release">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/lib_login-release.aar/9820c9f589444f7f42ebfa2cd122521d/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/lib_login-release.aar/9820c9f589444f7f42ebfa2cd122521d/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

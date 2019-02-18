@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <View
+            android:id="@+id/view_context"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="@color/BgColor"/>
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/title_ll"-->
+    <!--style="@style/myListStyle">-->
+
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+            android:id="@+id/title_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+        <ImageView
+                android:id="@+id/iv_standards"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="20dp"
+                android:src="@mipmap/icons_standards"/>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/tv_options"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/spacing_medium"
+                    android:textColor="@color/txtLight"
+                    android:textSize="@dimen/textSize_medium_small"/>
+
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/tvSchoolNum"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="12dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textColor="@color/txtSuperColor"
+                android:textSize="@dimen/textSize_medium_small"/>
+    </LinearLayout>
+</LinearLayout>

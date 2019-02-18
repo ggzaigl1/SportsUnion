@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+     Copyright (C) 2014 Chang Wentao
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+
+    <declare-styleable name="CirclePercentView">
+        <attr name="heartColor" format="color" />
+        <attr name="heartClickedColor" format="color" />
+        <attr name="skinStartColor" format="color" />
+        <attr name="skinEndColor" format="color" />
+        <attr name="skinDepth" format="integer" />
+        <attr name="percent" format="float" />
+        <attr name="duration" format="integer" />
+        <attr name="centerTextColor" format="color" />
+    </declare-styleable>
+
+
+    <declare-styleable name="TimeLineMarker">
+        <!--圆点大小-->
+        <attr name="markerSize" format="dimension" />
+        <!--圆点颜色或者图片-->
+        <attr name="marker" format="color|reference" />
+        <!--上面线段颜色或者图片-->
+        <attr name="beginLine" format="color|reference" />
+        <!--下面线段颜色或者图片-->
+        <attr name="endLine" format="color|reference" />
+        <!--线段粗细-->
+        <attr name="lineSize" format="dimension" />
+        <!--横向还是竖向-->
+        <attr name="oritation" format="boolean" />
+    </declare-styleable>
+
+
+    <declare-styleable name="customRulerView">
+
+        <attr name="rulerOrientation" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+
+        <attr name="rulerHighlightColor" format="color|reference" />
+        <attr name="rulerColor" format="color|reference" />
+        <attr name="rulerTextColor" format="color|reference" />
+
+        <attr name="rulerIntervalDistance" format="dimension" />
+        <attr name="rulerLineWidth" format="dimension" />
+        <attr name="rulerLineHeight" format="dimension" />
+        <attr name="rulerTextSize" format="dimension" />
+        <attr name="rulerTextBaseLineDistance" format="dimension" />
+
+        <attr name="rulerIsDivideByTen" format="boolean" />
+        <attr name="rulerDivideByTenHeight" format="dimension" />
+        <attr name="rulerDivideByTenWidth" format="dimension" />
+
+        <attr name="rulerIsDivideByFive" format="boolean" />
+        <attr name="rulerDivideByFiveHeight" format="dimension" />
+        <attr name="rulerDivideByFiveWidth" format="dimension" />
+
+
+        <attr name="rulerIntervalValue" format="float" />
+        <attr name="rulerMaxValue" format="float" />
+        <attr name="rulerMinValue" format="float" />
+
+        <attr name="rulerRetainLength" format="integer" />
+    </declare-styleable>
+
+
+    <declare-styleable name="NineGridImageView">
+        <attr format="dimension" name="singleImgSize"/>
+        <attr format="dimension" name="imgGap"/>
+        <attr format="integer" name="maxSize"/>
+        <attr format="enum" name="showStyle">
+            <enum name="grid" value="0"/>
+            <enum name="fill" value="1"/>
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="WeekCalendar">
+        <attr name="daysTextSize" format="dimension" />
+        <attr name="todayTextColor" format="color" />
+        <attr name="daysTextColor" format="color"/>
+        <attr name="daysSelectedTextColor" format="color" />
+        <attr name="daysSelectedBackground" format="reference|color" />
+        <attr name="weekTextSize" format="dimension" />
+        <attr name="weekTextColor" format="color" />
+        <attr name="weekBackgroundColor" format="reference|color" />
+        <attr name="hideTodayName" format="boolean" />
+        <attr name="isCornerMark" format="boolean" />
+        <attr name="cornerMarkBg" format="reference|color" />
+        <attr name="monthBackgroundColor" format="color" />
+        <attr name="monthTextColor" format="color" />
+        <attr name="nextArrowBg" format="reference|color" />
+        <attr name="preArrowBg" format="reference|color" />
+        <attr name="isShowMonth" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="StateButton">
+
+        <!--text color-->
+        <attr name="normalTextColor" format="color|reference"/>
+        <attr name="pressedTextColor" format="color|reference"/>
+        <attr name="unableTextColor" format="color|reference"/>
+
+        <!--stroke width and color, dash width, dash gap-->
+        <attr name="strokeDashWidth" format="dimension|reference"/>
+        <attr name="strokeDashGap" format="dimension|reference"/>
+        <attr name="normalStrokeWidth" format="dimension|reference"/>
+        <attr name="pressedStrokeWidth" format="dimension|reference"/>
+        <attr name="unableStrokeWidth" format="dimension|reference"/>
+        <attr name="normalStrokeColor" format="color|reference"/>
+        <attr name="pressedStrokeColor" format="color|reference"/>
+        <attr name="unableStrokeColor" format="color|reference"/>
+
+        <!--background color-->
+        <attr name="normalBackgroundColor" format="color|reference"/>
+        <attr name="pressedBackgroundColor" format="color|reference"/>
+        <attr name="unableBackgroundColor" format="color|reference"/>
+
+        <!--background radius-->
+        <attr name="radius" format="dimension|reference"/>
+        <attr name="round" format="boolean|reference"/>
+
+        <!--animation duration-->
+        <attr name="animationDuration" format="integer|reference"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="StateImageView">
+        <attr name="normalBackground" format="color|reference"/>
+        <attr name="pressedBackground" format="color|reference"/>
+        <attr name="unableBackground" format="color|reference"/>
+
+        <!--animation duration-->
+        <attr name="AnimationDuration" format="integer|reference"/>
+    </declare-styleable>
+</resources>

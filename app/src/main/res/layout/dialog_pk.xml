@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:gravity="center">
+
+            <ImageView
+                    android:id="@+id/iv_star_one"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginBottom="50dp"
+                    android:src="@mipmap/star_pk_gray"/>
+
+            <ImageView
+                    android:id="@+id/iv_star_two"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginBottom="50dp"
+                    android:src="@mipmap/star_pk_gray"/>
+
+            <ImageView
+                    android:id="@+id/iv_star_three"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginBottom="50dp"
+                    android:src="@mipmap/star_pk_gray"/>
+
+            <ImageView
+                    android:id="@+id/iv_star_fore"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginBottom="50dp"
+                    android:src="@mipmap/star_pk_gray"/>
+
+            <ImageView
+                    android:id="@+id/iv_star_five"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginBottom="50dp"
+                    android:src="@mipmap/star_pk_gray"/>
+        </LinearLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/tv_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_medium_small"
+                    android:gravity="center"
+                    android:lineSpacingExtra="8dp"
+                    android:textColor="@color/pk_content_color"
+                    android:textSize="19sp"/>
+
+            <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_dotted_arrow"
+                    android:layout_alignTop="@+id/tv_msg"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="80dp"
+                    android:layout_marginTop="75dp"/>
+
+        </RelativeLayout>
+
+        <com.hjy.sports.widget.StateButton
+                android:id="@+id/btn_exercise"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:text="练习方法"
+                android:textSize="@dimen/textSize_medium_small"
+                android:background="@color/pk_content_color"
+                android:textColor="@android:color/white"
+                app:normalBackgroundColor="@color/pk_content_color"
+                app:pressedBackgroundColor="@color/suggest_title"
+                app:radius="10dp"/>
+
+        <com.hjy.sports.widget.StateButton
+                android:id="@+id/btn_equipment"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:text="器材推荐"
+                android:layout_marginTop="10dp"
+                android:textSize="@dimen/textSize_medium_small"
+                android:background="@color/pk_content_color"
+                android:textColor="@android:color/white"
+                app:normalBackgroundColor="@color/pk_content_color"
+                app:pressedBackgroundColor="@color/suggest_title"
+                app:radius="10dp"/>
+
+        <com.hjy.sports.widget.StateButton
+                android:id="@+id/btn_scheme"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:layout_marginTop="10dp"
+                android:text="方案教学"
+                android:textSize="@dimen/textSize_medium_small"
+                android:background="@color/pk_content_color"
+                android:textColor="@android:color/white"
+                app:normalBackgroundColor="@color/pk_content_color"
+                app:pressedBackgroundColor="@color/suggest_title"
+                app:radius="10dp"/>
+
+
+        <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_cancel"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/icon_x"/>
+
+    </LinearLayout>
+
+
+</ScrollView>

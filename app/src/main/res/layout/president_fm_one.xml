@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:background="@color/white"
+                                            android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                    android:id="@+id/imgHead"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="#657CEE"
+                    android:scaleType="fitXY" />
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:id="@+id/tv_sensory_grade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3024人"
+                        android:textColor="@color/white"
+                        android:textSize="24dp" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="学校总人数"
+                        android:textColor="@color/calendar_week_color"
+                        android:textSize="12dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="50dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1680人"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="女生"
+                        android:textColor="@color/calendar_week_color"
+                        android:textSize="14dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="50dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1680人"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="女生"
+                        android:textColor="@color/calendar_week_color"
+                        android:textSize="14dp" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_medium_small"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:id="@+id/tv_figure"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="21dp"
+                    android:layout_weight="1"
+                    android:drawablePadding="10dp"
+                    android:drawableTop="@mipmap/ic_launcher_round"
+                    android:gravity="center"
+                    android:text="总体成绩"
+                    android:textColor="@color/txtSuperColor"
+                    android:textSize="@dimen/textSize_small" />
+
+            <TextView
+                    android:id="@+id/tv_stamina"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="10dp"
+                    android:drawableTop="@mipmap/ic_launcher_round"
+                    android:gravity="center"
+                    android:text="单项成绩"
+                    android:textColor="@color/txtSuperColor"
+                    android:textSize="@dimen/textSize_small" />
+
+            <TextView
+                    android:id="@+id/tv_standard"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="10dp"
+                    android:drawableTop="@mipmap/ic_launcher_round"
+                    android:gravity="center"
+                    android:text="班级排名"
+                    android:textColor="@color/txtSuperColor"
+                    android:textSize="@dimen/textSize_small" />
+
+            <TextView
+                    android:id="@+id/tv_sensory_integration"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="10dp"
+                    android:drawableTop="@mipmap/ic_launcher_round"
+                    android:gravity="center"
+                    android:text="预警学生"
+                    android:textColor="@color/txtSuperColor"
+                    android:textSize="@dimen/textSize_small" />
+
+        </LinearLayout>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/BgColor" />
+
+        <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/spacing_medium">
+
+            <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/spacing_medium_small"
+                    android:layout_marginTop="@dimen/spacing_medium_small"
+                    android:src="@mipmap/icon_fail" />
+
+            <TextView
+                    android:id="@+id/bili"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/image"
+                    android:layout_alignTop="@+id/image"
+                    android:layout_marginLeft="@dimen/spacing_medium_small"
+                    android:layout_toEndOf="@+id/image"
+                    android:gravity="center"
+                    android:text="男女比例"
+                    android:textColor="@color/txtSuperColor"
+                    android:textSize="@dimen/textSize_small" />
+
+            <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/image"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignTop="@+id/image"
+                    android:layout_marginRight="@dimen/spacing_medium_small"
+                    android:layout_marginTop="@dimen/spacing_medium_small"
+                    android:src="@mipmap/icon_more" />
+
+
+            <LinearLayout
+                    android:id="@+id/ll_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/bili"
+                    android:layout_below="@+id/bili"
+                    android:layout_marginTop="@dimen/spacing_medium_small"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:id="@+id/nan_bili"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="男生比例" />
+
+                <TextView
+                        android:id="@+id/nv_bili"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="女生比例" />
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/spacing_medium_small"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/shape_nan"
+                        android:drawablePadding="@dimen/spacing_small_much"
+                        android:text="男生" />
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/shape_nv"
+                        android:drawablePadding="@dimen/spacing_small_much"
+                        android:text="女生" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/bili"
+                    android:layout_below="@+id/ll_one"
+                    android:layout_marginTop="@dimen/spacing_medium_small"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="40%" />
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="60%" />
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/spacing_medium_small"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+
+                    <ProgressBar
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"
+                            android:max="100"
+                            android:progress="40"
+                            android:progressDrawable="@drawable/nan_progress_drawable" />
+
+                    <ProgressBar
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"
+                            android:layout_marginTop="4dp"
+                            android:max="100"
+                            android:progress="60"
+                            android:progressDrawable="@drawable/nv_progress_drawable" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/BgColor" />
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/spacing_medium">
+
+            <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/total_points_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/spacing_medium_small"
+                    android:layout_marginTop="@dimen/spacing_medium_small"
+                    android:src="@mipmap/icon_fail" />
+
+            <TextView
+                    android:id="@+id/total_points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/total_points_image"
+                    android:layout_alignTop="@+id/total_points_image"
+                    android:layout_marginLeft="@dimen/spacing_medium_small"
+                    android:layout_toEndOf="@+id/total_points_image"
+                    android:gravity="center"
+                    android:text="总分成绩数据"
+                    android:textColor="@color/txtSuperColor"
+                    android:textSize="@dimen/textSize_small" />
+
+            <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/total_points_image"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignTop="@+id/total_points_image"
+                    android:layout_marginRight="@dimen/spacing_medium_small"
+                    android:layout_marginTop="@dimen/spacing_medium_small"
+                    android:src="@mipmap/icon_more" />
+
+
+            <LinearLayout
+                    android:id="@+id/ll_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/total_points"
+                    android:layout_below="@+id/total_points"
+                    android:layout_marginTop="@dimen/spacing_medium_small"
+                    android:orientation="horizontal">
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                    <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="优秀人数" />
+
+                        <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="123" />
+
+                        <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="及格人数" />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="123" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="良好人数" />
+
+                        <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="123" />
+
+                        <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="不及格人数" />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="123" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="70dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                    <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                        <ProgressBar
+                                android:layout_width="16dp"
+                                android:layout_height="45dp"
+                                android:indeterminateOnly="false"
+                                android:max="100"
+                                android:progress="20"
+                                android:progressDrawable="@drawable/progress_vertical_gradient_simple_shape" />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="4dp"
+                                android:text="优秀" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                        <ProgressBar
+                                android:layout_width="16dp"
+                                android:layout_height="45dp"
+                                android:indeterminateOnly="false"
+                                android:max="100"
+                                android:progress="40"
+                                android:progressDrawable="@drawable/progress_vertical_gradient_simple_shape" />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="优秀" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                        <ProgressBar
+                                android:layout_width="16dp"
+                                android:layout_height="45dp"
+                                android:indeterminateOnly="false"
+                                android:max="100"
+                                android:progress="60"
+                                android:progressDrawable="@drawable/progress_vertical_gradient_simple_shape" />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="优秀" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                        <ProgressBar
+                                android:layout_width="16dp"
+                                android:layout_height="45dp"
+                                android:indeterminateOnly="false"
+                                android:max="100"
+                                android:progress="80"
+                                android:progressDrawable="@drawable/progress_vertical_gradient_simple_shape" />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="优秀" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/BgColor" />
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/spacing_medium">
+
+            <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/grade_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/spacing_medium_small"
+                    android:layout_marginTop="@dimen/spacing_medium_small"
+                    android:src="@mipmap/icon_fail" />
+
+            <TextView
+                    android:id="@+id/grade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/grade_image"
+                    android:layout_alignTop="@+id/grade_image"
+                    android:layout_marginLeft="@dimen/spacing_medium_small"
+                    android:layout_toEndOf="@+id/grade_image"
+                    android:gravity="center"
+                    android:text="年级平均值统计"
+                    android:textColor="@color/txtSuperColor"
+                    android:textSize="@dimen/textSize_small" />
+
+            <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/grade_image"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignTop="@+id/grade_image"
+                    android:layout_marginRight="@dimen/spacing_medium_small"
+                    android:layout_marginTop="@dimen/spacing_medium_small"
+                    android:src="@mipmap/icon_more" />
+
+
+            <LinearLayout
+                    android:id="@+id/ll_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/grade"
+                    android:layout_below="@+id/grade"
+                    android:layout_marginTop="@dimen/spacing_medium_small"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:id="@+id/top_scorer"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="得分最高" />
+
+                <TextView
+                        android:id="@+id/lowest_scorer"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="得分最低" />
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/spacing_medium_small"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/shape_nan"
+                        android:drawablePadding="@dimen/spacing_small_much"
+                        android:text="三年级" />
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/shape_nv"
+                        android:drawablePadding="@dimen/spacing_small_much"
+                        android:text="四年级" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/grade"
+                    android:layout_below="@+id/ll_three"
+                    android:layout_marginTop="@dimen/spacing_medium_small"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="三年级" />
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="四年级" />
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/spacing_medium_small"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+
+                    <ProgressBar
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"
+                            android:max="100"
+                            android:progress="40"
+                            android:progressDrawable="@drawable/nan_progress_drawable" />
+
+                    <ProgressBar
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"
+                            android:layout_marginTop="4dp"
+                            android:max="100"
+                            android:progress="60"
+                            android:progressDrawable="@drawable/nv_progress_drawable" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

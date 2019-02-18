@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SportsUnion.iml" filepath="$PROJECT_DIR$/SportsUnion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agora-release/agora-release.iml" filepath="$PROJECT_DIR$/agora-release/agora-release.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/baselibrary/baselibrary.iml" filepath="$PROJECT_DIR$/baselibrary/baselibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/calendarview/calendarview.iml" filepath="$PROJECT_DIR$/calendarview/calendarview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chartlibrary/chartlibrary.iml" filepath="$PROJECT_DIR$/chartlibrary/chartlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core-release/core-release.iml" filepath="$PROJECT_DIR$/core-release/core-release.iml" />
+      <module fileurl="file://$PROJECT_DIR$/imchat-release/imchat-release.iml" filepath="$PROJECT_DIR$/imchat-release/imchat-release.iml" />
+      <module fileurl="file://$PROJECT_DIR$/imgPicker/imgPicker.iml" filepath="$PROJECT_DIR$/imgPicker/imgPicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib_login-release/lib_login-release.iml" filepath="$PROJECT_DIR$/lib_login-release/lib_login-release.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pickerdate/pickerdate.iml" filepath="$PROJECT_DIR$/pickerdate/pickerdate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ui-release/ui-release.iml" filepath="$PROJECT_DIR$/ui-release/ui-release.iml" />
+    </modules>
+  </component>
+</project>

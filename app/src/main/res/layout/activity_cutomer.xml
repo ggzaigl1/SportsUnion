@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/BgColor"
+        android:orientation="vertical">
+
+    <EditText
+            android:id="@+id/edit_context"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@color/white"
+            android:inputType="number"
+            android:hint="请输入手机号码"
+            android:maxLength="11"
+            android:padding="12dp"
+            android:textSize="14sp"/>
+
+    <Button
+            android:id="@+id/bt_Update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/selector_btn"
+            android:padding="12dp"
+            android:text="@string/save"
+            android:textSize="18dp"
+            android:textColor="@color/white"/>
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BgColor"
+    android:divider="@drawable/divider_bg"
+    android:orientation="vertical"
+    android:showDividers="end">
+
+<!--    <EditText
+        android:id="@+id/editDynamicDesc"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/white"
+        android:gravity="start"
+        android:hint="@string/publishingTips"
+        android:maxLines="7"
+        android:paddingLeft="@dimen/spacing_medium_small"
+        android:paddingRight="@dimen/spacing_medium_small"
+        android:paddingTop="@dimen/spacing_medium"
+        android:text=""
+        android:textColor="@color/txtSecondColor"
+        android:textColorHint="@color/txtLight"
+        android:textSize="@dimen/textSize_medium_small" />-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@color/white">
+        <EditText
+            android:layout_alignParentTop="true"
+            android:id="@+id/editDynamicDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:gravity="top"
+            android:background="@null"
+            android:hint="@string/publishingTips"
+            android:padding="10dp"
+            android:layout_above="@+id/total_unm"
+            android:textColor="@color/txtSecondColor"
+            android:textColorHint="@color/txtLight"
+            android:textSize="@dimen/textSize_medium_small" />
+
+        <TextView
+            android:id="@+id/total_unm"
+            android:layout_marginBottom="@dimen/spacing_small"
+            android:layout_marginRight="@dimen/spacing_small"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/500"/>
+
+        <TextView
+            android:id="@+id/content_unm"
+            android:layout_marginBottom="@dimen/spacing_small"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/total_unm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"/>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvAppendix"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" />
+</LinearLayout>

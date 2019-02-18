@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="meals_recommend">
+        <item>营养搭配</item>
+        <item>推荐菜谱</item>
+    </array>
+    <array name="diet_list">
+        <item>每日营养</item>
+        <item>每周食谱</item>
+        <item>健康食材</item>
+        <item>健康美食</item>
+    </array>
+
+</resources>

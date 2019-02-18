@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_user_head"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginLeft="@dimen/spacing_medium_small"
+        android:layout_marginTop="@dimen/spacing_medium_small"
+        android:src="@mipmap/ic_launcher_round"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_alignTop="@+id/iv_user_head"
+        android:layout_alignBottom="@+id/iv_user_head"
+        android:layout_toRightOf="@+id/iv_user_head">
+
+        <TextView
+            android:id="@+id/tv_student_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ss"
+            android:textColor="@color/txtSuperColor"
+            android:textSize="@dimen/textSize_medium_small"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_social_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ss"
+            android:textColor="@color/txtLight"
+            android:textSize="@dimen/textSize_small_much" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_social_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_medium_small"
+        android:layout_marginRight="@dimen/spacing_medium_small"
+        android:layout_marginTop="@dimen/spacing_medium_small"
+        android:text=""
+        android:textColor="@color/txtSecondColor"
+        android:textSize="@dimen/textSize_medium_small"
+        android:layout_below="@+id/iv_user_head" />
+
+
+    <com.hjy.sports.widget.ninegridimageview.NineGridImageView
+        android:id="@+id/nine_grid_image"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        app:imgGap="4dp"
+        app:showStyle="grid"
+        app:singleImgSize="150dp"
+        android:layout_marginLeft="@dimen/spacing_medium_small"
+        android:layout_marginRight="@dimen/spacing_medium_small"
+        android:layout_below="@+id/tv_social_content" />
+
+
+</RelativeLayout>

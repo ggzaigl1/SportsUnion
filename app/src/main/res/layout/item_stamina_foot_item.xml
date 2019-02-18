@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:background="@color/white"
+              android:paddingBottom="@dimen/spacing_medium_small"
+              android:paddingTop="@dimen/spacing_medium_small">
+
+
+    <TextView
+            android:id="@+id/tvHint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/sensory_blue"
+            android:drawablePadding="@dimen/spacing_small"
+            android:singleLine="true"
+            android:text="温馨提示：体能较弱项目"
+            android:textColor="@color/txtSuperColor"
+            android:textSize="@dimen/textSize_medium_small"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+
+    <TextView
+            android:id="@+id/tvHintTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/shape_round_orange"
+            android:drawablePadding="@dimen/spacing_small"
+            android:paddingBottom="@dimen/spacing_small_much"
+            android:paddingTop="@dimen/spacing_small_much"
+            android:singleLine="true"
+            android:text="1分钟跳绳的测试成绩相对偏低"
+            android:textColor="@color/txtSuperColor"
+            android:textSize="@dimen/textSize_medium_small"/>
+
+    <TextView
+            android:id="@+id/tvHintContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_small_much"
+            android:lineSpacingExtra="8dp"
+            android:textColor="@color/txtLight"
+            android:textSize="@dimen/textSize_small"/>
+
+    <!--<View-->
+    <!--android:id="@+id/view"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/itemSplit_line"-->
+    <!--android:layout_marginLeft="@dimen/spacing_medium_small"-->
+    <!--android:layout_marginRight="@dimen/spacing_medium_small"-->
+    <!--android:background="@color/lineColor"/>-->
+
+</LinearLayout>
